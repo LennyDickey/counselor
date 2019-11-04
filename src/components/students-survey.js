@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import * as Survey from "survey-react";
 import "survey-react/survey.css";
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "jquery-ui/themes/base/all.css";
 import "nouislider/distribute/nouislider.css";
@@ -14,12 +13,13 @@ import "select2/dist/js/select2.js";
 import "jquery-bar-rating";
 
 import * as widgets from "surveyjs-widgets";
+import "../style/survey.scss";
 
-import "icheck/skins/square/blue.css";
-window["$"] = window["jQuery"] = $;
-require("icheck");
+// import "icheck/skins/square/blue.css";
+// window["$"] = window["jQuery"] = $;
+// require("icheck");
 
-export {MyQuestion} from "./MyQuestion";
+// export {MyQuestion} from "./MyQuestion";
 
 Survey.StylesManager.applyTheme("default");
 
@@ -36,7 +36,7 @@ widgets.ckeditor(Survey);
 widgets.autocomplete(Survey, $);
 widgets.bootstrapslider(Survey);
 
-class Survey extends Component {
+class StudentsSurvey extends Component {
   json = {
     title: "Student Servey",
     showProgressBar: "top",
@@ -226,4 +226,4 @@ class Survey extends Component {
   }
 }
 
-export default Survey;
+export default StudentsSurvey;

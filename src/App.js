@@ -4,7 +4,7 @@ import "./App.css";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import Survey from "./components/students-survey";
-
+import PathWay from "./components/PathWayCard";
 import Profile from "./components/profile";
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
       <div>
         <Route path="/" exact component={Profile} />
         <Route path="/survey" render={() => <Survey />} />
+        <Route path="/pathWay" render={() => <PathWay />} />
       </div>
       <Footer />
     </Router>

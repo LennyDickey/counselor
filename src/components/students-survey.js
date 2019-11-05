@@ -11,15 +11,9 @@ import $ from "jquery";
 import "jquery-ui/ui/widgets/datepicker.js";
 import "select2/dist/js/select2.js";
 import "jquery-bar-rating";
-
+import { Link } from 'react-router-dom';
 import * as widgets from "surveyjs-widgets";
 import "../style/survey.scss";
-
-// import "icheck/skins/square/blue.css";
-// window["$"] = window["jQuery"] = $;
-// require("icheck");
-
-// export {MyQuestion} from "./MyQuestion";
 
 Survey.StylesManager.applyTheme("default");
 
@@ -62,10 +56,12 @@ class StudentsSurvey extends Component {
             title: "Please select the country you have arrived from:"
           },
           {
-            type: "signaturepad",
-            "isRequired": true,
-            name: "sign",
-            title: "Please enter your signature"
+            type: "rating",
+            name: "satisfaction",
+            isRequired: true,
+            title: "How satisfied are you with the Product?",
+            mininumRateDescription: "Not Satisfied",
+            maximumRateDescription: "Completely satisfied"
           },
           {
             name: "date",
@@ -74,7 +70,7 @@ class StudentsSurvey extends Component {
             title: "Your favorite date:",
             dateFormat: "mm/dd/yy",
             isRequired: true
-          }
+          }  
         ]
       },
       {
@@ -132,14 +128,6 @@ class StudentsSurvey extends Component {
           },
           {
             type: "rating",
-            name: "satisfaction",
-            isRequired: true,
-            title: "How satisfied are you with the Product?",
-            mininumRateDescription: "Not Satisfied",
-            maximumRateDescription: "Completely satisfied"
-          },
-          {
-            type: "rating",
             name: "recommend friends",
             isRequired: true,
             visibleIf: "{satisfaction} > 3",
@@ -181,6 +169,12 @@ class StudentsSurvey extends Component {
               "high|No, the price is too high for your product"
             ]
           },
+          {
+            type: "signaturepad",
+            "isRequired": true,
+            name: "sign",
+            title: "Please enter your signature"
+          }
         ]
       },
       {
@@ -211,15 +205,16 @@ class StudentsSurvey extends Component {
       <div className="App">
         <div className="App-header">
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
-          <h2>Welcome to Hopes Survey</h2>
+          <h2>Welcome to Counselor Survey</h2>
         </div>
         <div className="surveyjs">
-          <h1>Survey library in action:</h1>
+          {/* <h1>Survey is in action:</h1> */}
           <Survey.Survey
             model={model}
             onComplete={this.onComplete}
             onValueChanged={this.onValueChanged}
           />
+          <Link to="/pathWay" className="btn btn-primary">Click for Resuls</Link>
         </div>
       </div>
     );

@@ -8,7 +8,8 @@ const studentSchema = new Schema({
     age: { type: Number, required: true },
     schoolGrade: { type: Number, required: true },
     gpa: { type: Number, required: true },
-    date: { type: Date, required: true, default: Date.now }
+    date: { type: Date, required: true, default: Date.now },
+    image: { type: String, required: true }
 });
 
 const Student = mongoose.model('Student', studentSchema);

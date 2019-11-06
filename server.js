@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === 'production') {
     uri = process.env.ATLAS_URI;
     // connection string for Atlas here, protected by 'process.env.ATLAS_URI'
 } else {
-    uri = process.env.ATLAS_URI;
+    uri = "mongodb://localhost/studentMockData";
     // connection string for local database storage
 }
 

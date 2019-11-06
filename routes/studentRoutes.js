@@ -23,7 +23,8 @@ router.post('/add', async (req, res) => {
         age: req.body.age,
         schoolGrade: req.body.schoolGrade,
         gpa: req.body.gpa,
-        date: req.body.date
+        date: req.body.date,
+        image: req.body.image
     });
     student = await student.save();
     res.send(student);
@@ -42,7 +43,8 @@ router.post('/update/:id', async (req, res) => {
                 age: req.body.age,
                 schoolGrade: req.body.schoolGrade,
                 gpa: req.body.gpa,
-                date: req.body.date
+                date: req.body.date,
+                image: req.body.image
             }
         }
     );

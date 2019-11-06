@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 
 import Profile from "./components/profile";
+import StudentInfo from "./components/StudentInfo";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <div className="container">
         <Route path="/" exact component={Profile} />
+        <Route path="/students/" component={StudentInfo} />
       </div>
       <Footer />
     </Router>

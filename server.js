@@ -1,7 +1,8 @@
-// required node modules: dotenv('password protection/security'), express(server), mongoose(database)
+// required node modules: dotenv('password protection/security'), express(server), mongoose(database), cors(sending data from express port to react port)
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 const app = express();
 const port = process.env.PORT || 3001;
@@ -9,6 +10,7 @@ let uri = "";
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
+app.use(cors());
 
 if (process.env.NODE_ENV === 'production') {
     uri = process.env.ATLAS_URI;

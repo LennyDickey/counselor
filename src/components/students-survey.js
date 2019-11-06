@@ -14,6 +14,7 @@ import "jquery-bar-rating";
 import { Link } from 'react-router-dom';
 import * as widgets from "surveyjs-widgets";
 import "../style/survey.scss";
+import { checkServerIdentity } from "tls";
 
 Survey.StylesManager.applyTheme("default");
 
@@ -36,6 +37,7 @@ class StudentsSurvey extends Component {
     showProgressBar: "top",
     pages: [
       {
+        //page one
         elements: [
           {
             "type": "radiogroup",
@@ -73,6 +75,7 @@ class StudentsSurvey extends Component {
           }  
         ]
       },
+      // page 2
       {
         questions: [
           {
@@ -145,6 +148,7 @@ class StudentsSurvey extends Component {
         ]
       },
       {
+            //page 3
         questions: [
           {
             type: "radiogroup",
@@ -177,6 +181,7 @@ class StudentsSurvey extends Component {
           }
         ]
       },
+      // page 4
       {
         questions: [
           {
@@ -196,7 +201,7 @@ class StudentsSurvey extends Component {
   }
 
   onComplete(result) {
-    console.log("Complete! " + result);
+    console.log("Complete! ");
   }
 
   render() {
@@ -211,10 +216,11 @@ class StudentsSurvey extends Component {
           {/* <h1>Survey is in action:</h1> */}
           <Survey.Survey
             model={model}
-            onComplete={this.onComplete}
+            onComplete={() => console.log('Hello')}
             onValueChanged={this.onValueChanged}
           />
           <Link to="/pathWay" className="btn btn-primary">Click for Resuls</Link>
+         
         </div>
       </div>
     );
@@ -222,3 +228,4 @@ class StudentsSurvey extends Component {
 }
 
 export default StudentsSurvey;
+

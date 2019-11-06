@@ -20,3 +20,17 @@
 .App-link {
   color: #09d3ac;
 }
+
+.progress-bar {
+  width: 75%;
+}
+
+.herobtn{
+  justify-content: center;
+
+}
+
+.card{
+ width: 18rem;
+ margin: 10%;
+}

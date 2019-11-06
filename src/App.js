@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div>
+      <div className="container">
         <Route path="/" exact component={Profile} />
       </div>
       <Footer />

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -22,8 +23,12 @@ function Navbar() {
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
             <a className="nav-link" href="#">
-              Home <span class="sr-only">(current)</span>
+              Home <span className="sr-only">(current)</span>
             </a>
+          </li>
+
+          <li className="nav-item">
+            <Link to="/survey" className="header__nav-button btn">Survey</Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
@@ -55,25 +60,25 @@ function Navbar() {
               </a>
             </div>
           </li>
-          <li class="nav-item">
+          <li className="nav-item">
             <a
-              class="nav-link disabled"
+              className="nav-link disabled"
               href="#"
-              tabindex="-1"
+              tabIndex="-1"
               aria-disabled="true"
             >
               Disabled
             </a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <form className="form-inline my-2 my-lg-0">
           <input
-            class="form-control mr-sm-2"
+            className="form-control mr-sm-2"
             type="search"
             placeholder="Search"
             aria-label="Search"
           ></input>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
             Search
           </button>
         </form>

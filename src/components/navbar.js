@@ -2,6 +2,9 @@
 import React from 'react';
 =======
 import React from "react";
+<<<<<<< HEAD
+>>>>>>> de3e0900ed5a60ed85a6b50d90e9f2375e7165cd
+=======
 >>>>>>> de3e0900ed5a60ed85a6b50d90e9f2375e7165cd
 import { Link } from 'react-router-dom';
 

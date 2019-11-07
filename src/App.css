@@ -21,11 +21,11 @@
   color: #09d3ac;
 }
 
-/*wendy home*/
+/* wendy home */
 header {
   position: relative;
-  background-color: black;
-  height: 75vh;
+  background-color: transparent;
+  height: calc(75vh + 100px);
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -55,11 +55,11 @@ header .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
-  background-color: black;
+  height: 100%;
   opacity: 0.5;
   z-index: 1;
+  background-color: black;
 }
 
 @media (pointer: coarse) and (hover: none) {
@@ -67,24 +67,72 @@ header .overlay {
     background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
       no-repeat center center scroll;
   }
+
   header video {
     display: none;
   }
 }
 
-.width {
-  max-width: 540px;
+.navbar {
+  background: transparent;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
 }
-.title{
+
+.navbar .nav-link {
+  color: white;
+}
+
+.nav-img {
+  width: 100px;
+}
+
+.title {
   font-family: 'Cardo', serif;
   letter-spacing: 12px;
- font-size: 10em;
+  font-size: 10em;
   text-shadow: -2px 2px 0px #028090;
   color: #E4FDE1; 
-
 }
-.yay{
+
+/* 😃 🔥 */
+.yay {
   font-family: 'Cardo', serif;
   color: #E4FDE1; 
   font-size: 2em;
+}
+
+.about{
+  font-family: 'Cardo', serif;
+  color: #114B5F; 
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.story{
+  font-family: 'Cardo', serif;
+  color: #114B5F; 
+  font-size: 2em;
+}
+
+.circle-container {
+  padding: 40px;
+  text-align: center;
+}
+
+.circle-container img {
+  margin-bottom: 20px;
+}
+
+.featurette-section-one {
+  padding: 40px 60px;
+}
+
+.featurette-section-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

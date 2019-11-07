@@ -5,7 +5,7 @@ import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import "./style/wave.css";
 
-// import Home from "./components/home";
+import Home from "./components/home";
 
 
 import Profile from "./components/profile";
@@ -14,9 +14,9 @@ function App() {
   return (
     <Router>
       <Navbar />
-      {/* <Home /> */}
+      <Home />
       <div>
-        <Route path="/" exact component={Profile} />
+        <Route path="/Home" exact component={Home} />
       </div>
       <svg
             className="waves"

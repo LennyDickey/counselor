@@ -1,8 +1,23 @@
+<<<<<<< HEAD
+import React from 'react';
+=======
 import React from "react";
+<<<<<<< HEAD
+>>>>>>> de3e0900ed5a60ed85a6b50d90e9f2375e7165cd
+=======
+>>>>>>> de3e0900ed5a60ed85a6b50d90e9f2375e7165cd
 import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
+<<<<<<< HEAD
+    <nav className="navbar navbar-dark navbar-expand-lg">
+      <Link to="/" className="nav-link">Sponsor a Kid</Link>
+      <Link to="/" className="navbar-brand">
+        <img src="../pics/cons.png" class="nav-img" alt="..."/>
+      </Link>
+      <Link to="/create" className="nav-link">Donate Today</Link>
+=======
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="#">
         Navbar
@@ -83,7 +98,8 @@ function Navbar() {
           </button>
         </form>
       </div>
+>>>>>>> de3e0900ed5a60ed85a6b50d90e9f2375e7165cd
     </nav>
   );
 }
-export default Navbar;
+export default Navbar

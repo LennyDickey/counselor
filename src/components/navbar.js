@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="navbar navbar-dark navbar-expand-lg">
       <Link to="/" className="nav-link">Sponsor a Kid</Link>
       <Link to="/" className="navbar-brand">
-        <img src="../pics/counslr.png" class="nav-img" alt="..."/>
+        <img src="../pics/cons.png" class="nav-img" alt="..."/>
       </Link>
       <Link to="/create" className="nav-link">Donate Today</Link>
     </nav>

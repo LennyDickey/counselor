@@ -15,6 +15,8 @@ import { Link } from 'react-router-dom';
 import * as widgets from "surveyjs-widgets";
 import "../style/survey.scss";
 import { checkServerIdentity } from "tls";
+import PathWay from "./PathWayCard";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 Survey.StylesManager.applyTheme("default");
 
@@ -133,7 +135,7 @@ class StudentsSurvey extends Component {
             type: "rating",
             name: "recommend friends",
             isRequired: true,
-            visibleIf: "{satisfaction} > 3",
+            // visibleIf: "{satisfaction} > 3",
             title:
               "How likely are you to recommend the Product to a friend or co-worker?",
             mininumRateDescription: "Will not recommend",
@@ -193,8 +195,8 @@ class StudentsSurvey extends Component {
           }
         ]
       }
-    ]
-   completedHtml: `<div><h1>Thank you for completing the survey!</h1><br> <a href="/pathWay">Click for Resuls</a></div>`
+    ],
+    completedHtml: `<div><h1>Thank you for completing the survey!</h1><br> <a href="/pathWay">Click for Resuls</a></div>`
   };
 
   onValueChanged(result) {
@@ -204,7 +206,7 @@ class StudentsSurvey extends Component {
   onComplete(result) {
     console.log("Complete! ");
   }
-
+  
   render() {
     var model = new Survey.Model(this.json);
     return (
@@ -217,11 +219,9 @@ class StudentsSurvey extends Component {
           {/* <h1>Survey is in action:</h1> */}
           <Survey.Survey
             model={model}
-            onComplete={() => console.log('Hello')}
+            onComplete={() => console.log("Hello")}
             onValueChanged={this.onValueChanged}
           />
-          <Link to="/pathWay" className="btn btn-primary">Click for Resuls</Link>
-         
         </div>
       </div>
     );

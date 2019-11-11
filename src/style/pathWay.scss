@@ -9,6 +9,8 @@ max-width : 540px;
 .imageSize {
   width: 180px;
   margin-top:  20px;
+  margin-left: 15px;
+  padding-right: 15px;
 }
 
 .headline {
@@ -42,6 +44,14 @@ max-width : 540px;
     padding-left: 0;
     justify-content: center;
   }
+  .grid-item {
+    padding: 5px;
+    margin-top: 40px;
+    margin-right: 60px;
+    margin-left: 20px;
+    width: 550px;
+    
+  }
 }
 
 @media screen and (max-width: 1191px) {
@@ -70,5 +80,20 @@ max-width : 540px;
     display: grid;
     grid-template-columns: auto;
     font-size: 10px;
+  }
+  .grid-item {
+    padding: 5px;
+    margin-top: 40px;
+    margin-right: 60px;
+    margin-left: 20px;
+    width: 230px;
+    
+  }
+  .imageSize {
+    width: 180px;
+    margin-top:  20px;
+    margin-left: 30px;
+    padding-left: 20px;
+    padding-right: 15px;
   }
 }

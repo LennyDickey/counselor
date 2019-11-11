@@ -194,6 +194,7 @@ class StudentsSurvey extends Component {
         ]
       }
     ]
+   completedHtml: `<div><h1>Thank you for completing the survey!</h1><br> <a href="/pathWay">Click for Resuls</a></div>`
   };
 
   onValueChanged(result) {

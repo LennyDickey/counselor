@@ -219,7 +219,7 @@ class StudentsSurvey extends Component {
           {/* <h1>Survey is in action:</h1> */}
           <Survey.Survey
             model={model}
-            onComplete={() => <Link to="/pathWay" className="btn btn-primary">Click for Resuls</Link>}
+            onComplete={() => console.log("Hello")}
             onValueChanged={this.onValueChanged}
           />
         </div>

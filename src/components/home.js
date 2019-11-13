@@ -61,22 +61,22 @@ function Home() {
           </div>
         </div> 
         
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+    <ol className="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-        <div class="card mb-3">
-        <div class="row no-gutters">
-        <div class="col-md-4">
-        <img src="https://media.istockphoto.com/photos/portrait-of-smiling-teen-boy-outdoors-picture-id589098830?k=6&m=589098830&s=612x612&w=0&h=Ut2FNWjS9CxXG5DdDduLqOEhcV0RBzRvsLrh9qS5EaY=" class="card-img" alt="..."></img>
+    <div className="carousel-inner">
+        <div className="carousel-item active">
+        <div className="card mb-3">
+        <div className="row no-gutters">
+        <div className="col-md-4">
+        <img src="https://media.istockphoto.com/photos/portrait-of-smiling-teen-boy-outdoors-picture-id589098830?k=6&m=589098830&s=612x612&w=0&h=Ut2FNWjS9CxXG5DdDduLqOEhcV0RBzRvsLrh9qS5EaY=" className="card-img" alt="..."></img>
         </div>
-        <div class="col-md-8">
-        <div class="card-body">
-            <h5 class="card-title">Counslr Stories</h5>
+        <div className="col-md-8">
+        <div className="card-body">
+            <h5 className="card-title">Counslr Stories</h5>
             <h6>Meet Ashton</h6>
                 <p>
                     "My Counslr gave me Hope I've always dreamt about attending a university  but I knew that was not a realistic goal due to my finacial situtation. But when I heard about Counslr that all changed thanks to my sponser"
@@ -90,14 +90,14 @@ function Home() {
         </div>
     </div>
 
-        <div class="carousel-item">
-        <div class="row no-gutters">
-        <div class="col-md-4">
-        <img src="https://media.istockphoto.com/photos/portrait-of-smiling-teen-boy-outdoors-picture-id589098830?k=6&m=589098830&s=612x612&w=0&h=Ut2FNWjS9CxXG5DdDduLqOEhcV0RBzRvsLrh9qS5EaY=" type="pics/png" alt="..." class="card-img" />
+        <div className="carousel-item">
+        <div className="row no-gutters">
+        <div className="col-md-4">
+        <img src="https://media.istockphoto.com/photos/portrait-of-smiling-teen-boy-outdoors-picture-id589098830?k=6&m=589098830&s=612x612&w=0&h=Ut2FNWjS9CxXG5DdDduLqOEhcV0RBzRvsLrh9qS5EaY=" type="pics/png" alt="..." className="card-img" />
         </div>
-        <div class="col-md-4">
-        <div class="card-body">
-            <h5 class="card-title story">Counslr Stories</h5>
+        <div className="col-md-4">
+        <div className="card-body">
+            <h5 className="card-title story">Counslr Stories</h5>
             <h6>Meet Ava and Cory</h6>
             <p>
                     "My life completley turned around because of Corey. It gave me a purpise to help my community and change someones life forever."
@@ -109,14 +109,14 @@ function Home() {
         </div>
     </div>
         </div>
-        <div class="carousel-item">
-        <div class="row no-gutters">
-        <div class="col-md-4">
-        <img src="https://media.istockphoto.com/photos/portrait-of-smiling-teen-boy-outdoors-picture-id589098830?k=6&m=589098830&s=612x612&w=0&h=Ut2FNWjS9CxXG5DdDduLqOEhcV0RBzRvsLrh9qS5EaY=" type="pics/png" alt="..." class="card-img" />
+        <div className="carousel-item">
+        <div className="row no-gutters">
+        <div className="col-md-4">
+        <img src="https://media.istockphoto.com/photos/portrait-of-smiling-teen-boy-outdoors-picture-id589098830?k=6&m=589098830&s=612x612&w=0&h=Ut2FNWjS9CxXG5DdDduLqOEhcV0RBzRvsLrh9qS5EaY=" type="pics/png" alt="..." className="card-img" />
         </div>
-        <div class="col-md-8">
-        <div class="card-body">
-            <h5 class="card-title">Counslr Stories</h5>
+        <div className="col-md-8">
+        <div className="card-body">
+            <h5 className="card-title">Counslr Stories</h5>
             <h6>Meet Yamilith</h6>
             <p>
                     "I thought about the time when I wanted to attend college but couldnt because I could not afford it nor have the right resources to guide me to the right direction. That is when I opended my eyes. Wouldnt it be great for me to give someone hope and opportunity they deserve."
@@ -129,21 +129,21 @@ function Home() {
     </div>
         </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+    <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+    <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="sr-only">Next</span>
     </a>
     </div>
             <hr className="featurette-divider"/>
 
             <div className="row featurette">
             <div className="col-md-12">
-                <div class="row">
-                    <div class="col-md-8 featurette-section-one">
+                <div className="row">
+                    <div className="col-md-8 featurette-section-one">
                         <h2 className="featurette-heading about">About Counslr</h2>
                         <p className="about1">
                         There’s a part of every one of us that dreams of a perfect world. That sparks an inspiration to help one another, to raise awareness, or even change our community. At Counslr, we believe your hopes and dreams should be shared with everyone that way change can happen.
@@ -151,7 +151,7 @@ function Home() {
                         <p className="about1">That is why we pride ourself by making it easy to inspire and affect thousands of lifes.By giving people the neccessary tools they need to capture and share their story, we have built a community where we are able to make dreams happen by working together. By Changing a life one by one.
                         </p>
                     </div>
-                    <div class="col-md-4 featurette-section-two">
+                    <div className="col-md-4 featurette-section-two">
                         <img src="../pics/logo.png" alt="..."/>
                     </div>
                 </div>

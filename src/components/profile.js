@@ -8,17 +8,17 @@ function Profile() {
         <h2>Anell's College Fund</h2>
         <p>17 year old going to Harvard !</p>
       </header>
-      <div class="row">
-        <div class="col-6">
-          <div class="embed-responsive embed-responsive-16by9">
+      <div className="row">
+        <div className="col-6">
+          <div className="embed-responsive embed-responsive-16by9">
             <iframe
-              class="embed-responsive-item"
+              className="embed-responsive-item"
               src="https://www.youtube.com/embed/mPHpnJu8zc8"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>
-        <div class="col-6">
+        <div className="col-6">
           <div className="progress">
             <div
               className="progress-bar progress-bar-striped bg-danger progress-bar-animated"
@@ -43,24 +43,24 @@ function Profile() {
           <div className="herobtn">
             <button
               type="button"
-              class="btn btn-outline-danger btn-lg btn-block"
+              className="btn btn-outline-danger btn-lg btn-block"
             >
               Donate
             </button>
-            <button type="button" class="btn btn-outline-danger btn-lg right">
+            <button type="button" className="btn btn-outline-danger btn-lg right">
               Follow
             </button>
           </div>
         </div>
       </div>
       <hr className="featurette-divider"></hr>
-      <div class="container">
-        <div class="row">
-          <div class="col-8">
+      <div className="container">
+        <div className="row">
+          <div className="col-8">
             <nav>
-              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <div className="nav nav-tabs" id="nav-tab" role="tablist">
                 <a
-                  class="nav-item nav-link active"
+                  className="nav-item nav-link active"
                   id="nav-home-tab"
                   data-toggle="tab"
                   href="#nav-home"
@@ -72,7 +72,7 @@ function Profile() {
                   About
                 </a>
                 <a
-                  class="nav-item nav-link"
+                  className="nav-item nav-link"
                   id="nav-profile-tab"
                   data-toggle="tab"
                   href="#nav-profile"
@@ -83,7 +83,7 @@ function Profile() {
                   Blog
                 </a>
                 <a
-                  class="nav-item nav-link"
+                  className="nav-item nav-link"
                   id="nav-contact-tab"
                   data-toggle="tab"
                   href="#nav-contact"
@@ -95,9 +95,9 @@ function Profile() {
                 </a>
               </div>
             </nav>
-            <div class="tab-content" id="nav-tabContent">
+            <div className="tab-content" id="nav-tabContent">
               <div
-                class="tab-pane fade show active"
+                className="tab-pane fade show active"
                 id="nav-home"
                 role="tabpanel"
                 aria-labelledby="nav-home-tab"
@@ -111,25 +111,25 @@ function Profile() {
                 orci ac dignissim. Integer vitae ipsum tortor. Integer sagittis
                 non justo nec molestie. Vivamus malesuada, dolor non eleifend
                 venenatis, purus metus placerat ex, et molestie enim nibh vel
-                dui. Class aptent taciti sociosqu ad litora torquent per conubia
+                dui. className aptent taciti sociosqu ad litora torquent per conubia
                 nostra, per inceptos himenaeos. Nulla vitae neque lorem.
                 Phasellus malesuada justo eros, nec pretium massa dapibus at.
               </div>
               <div
-                class="tab-pane fade"
+                className="tab-pane fade"
                 id="nav-profile"
                 role="tabpanel"
                 aria-labelledby="nav-profile-tab"
               >
-                <div class="blog-card">
-                  <div class="meta">
-                    <div class="photo"></div>
-                    <ul class="details">
-                      <li class="author">
+                <div className="blog-card">
+                  <div className="meta">
+                    <div className="photo"></div>
+                    <ul className="details">
+                      <li className="author">
                         <a href="#">John Doe</a>
                       </li>
-                      <li class="date">Aug. 24, 2015</li>
-                      <li class="tags">
+                      <li className="date">Aug. 24, 2015</li>
+                      <li className="tags">
                         <ul>
                           <li>
                             <a href="#">Learn</a>
@@ -147,7 +147,7 @@ function Profile() {
                       </li>
                     </ul>
                   </div>
-                  <div class="description">
+                  <div className="description">
                     <h1>Learning to Code</h1>
                     <h2>Opening a door to the future</h2>
                     <p>
@@ -157,20 +157,20 @@ function Profile() {
                       praesentium, quam nobis! Neque ad aliquam facilis numquam.
                       Veritatis, sit.
                     </p>
-                    <p class="read-more">
+                    <p className="read-more">
                       <a href="#">Read More</a>
                     </p>
                   </div>
                 </div>
-                <div class="blog-card alt">
-                  <div class="meta">
-                    <div class="photo"></div>
-                    <ul class="details">
-                      <li class="author">
+                <div className="blog-card alt">
+                  <div className="meta">
+                    <div className="photo"></div>
+                    <ul className="details">
+                      <li className="author">
                         <a href="#">Jane Doe</a>
                       </li>
-                      <li class="date">July. 15, 2015</li>
-                      <li class="tags">
+                      <li className="date">July. 15, 2015</li>
+                      <li className="tags">
                         <ul>
                           <li>
                             <a href="#">Learn</a>
@@ -185,8 +185,8 @@ function Profile() {
                       </li>
                     </ul>
                   </div>
-                  <div class="description">
-                    <h1>First Day of Class</h1>
+                  <div className="description">
+                    <h1>First Day of class</h1>
                     <h2>Excited for college!</h2>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -194,14 +194,14 @@ function Profile() {
                       praesentium, quam nobis! Neque ad aliquam facilis numquam.
                       Veritatis, sit.
                     </p>
-                    <p class="read-more">
+                    <p className="read-more">
                       <a href="#">Read More</a>
                     </p>
                   </div>
                 </div>
               </div>
               <div
-                class="tab-pane fade"
+                className="tab-pane fade"
                 id="nav-contact"
                 role="tabpanel"
                 aria-labelledby="nav-contact-tab"
@@ -215,7 +215,7 @@ function Profile() {
                 orci ac dignissim. Integer vitae ipsum tortor. Integer sagittis
                 non justo nec molestie. Vivamus malesuada, dolor non eleifend
                 venenatis, purus metus placerat ex, et molestie enim nibh vel
-                dui. Class aptent taciti sociosqu ad litora torquent per conubia
+                dui. className aptent taciti sociosqu ad litora torquent per conubia
                 nostra, per inceptos himenaeos. Nulla vitae neque lorem.
                 Phasellus malesuada justo eros, nec pretium massa dapibus at.
               </div>
@@ -233,38 +233,38 @@ function Profile() {
               </a>
             </p>
           </div>
-          <div class="col-4">
+          <div className="col-4">
             2 of 3
-            <div class="card">
+            <div className="card">
               <img
                 src="https://media.wired.com/photos/5be4cd03db23f3775e466767/125:94/w_2375,h_1786,c_limit/books-521812297.jpg"
-                class="card-img-top"
+                className="card-img-top"
                 alt="..."
               ></img>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-primary">
+                <a href="#" className="btn btn-primary">
                   Go somewhere
                 </a>
               </div>
             </div>
-            <div class="card">
+            <div className="card">
               <img
                 src="https://media.wired.com/photos/5be4cd03db23f3775e466767/125:94/w_2375,h_1786,c_limit/books-521812297.jpg"
-                class="card-img-top"
+                className="card-img-top"
                 alt="..."
               ></img>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-primary">
+                <a href="#" className="btn btn-primary">
                   Go somewhere
                 </a>
               </div>

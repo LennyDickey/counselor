@@ -1,6 +1,3 @@
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;
@@ -20,6 +17,7 @@
 .App-link {
   color: #09d3ac;
 }
+
 
 /* wendy home */
 header {
@@ -135,4 +133,18 @@ header .overlay {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.progress-bar {
+  width: 75%;
+}
+
+.herobtn{
+  justify-content: center;
+
+}
+
+.card{
+ width: 18rem;
+ margin: 10%;
 }

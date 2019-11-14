@@ -119,18 +119,12 @@ function Profile() {
               >
                 <h2 className="nameBro">About Me:</h2>
                 <p>
-                  After taking a year off from theatre to explore other
-                  passions, I have decided to pursue a Master of Fine Arts in
-                  Stage Management. Before my undergraduate, I had dreamed of
-                  obtaining an MFA from Columbia University in NYC. Today, I
-                  received an email from Michael J. Passaro, the head of stage
-                  management at Columbia. It stated I have been granted an
-                  in-person interview for the MFA Stage Management program at
-                  Columbia University! This is a wonderful opportunity that I am
-                  incredibly thankful for. I am pinching myself thinking I have
-                  a real shot at obtaining an MFA from Columbia. However, I need
-                  to ask for some help in getting to NYC February 11 for
-                  interviews. Thank you for your support!
+                  I really apreciate your help. A few weeks ago, I did not have
+                  any clue of how I was going to raise the necessary funds that
+                  are esential for my future education, but now with all your
+                  support I continue to dream big. This is a wonderful
+                  opportunity that I am incredibly thankful for. I am pinching
+                  myself thinking I have a real shot at obtaining a degree. Thank you for your support!
                 </p>{" "}
               </div>
               <div

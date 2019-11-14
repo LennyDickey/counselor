@@ -1,14 +1,26 @@
 import React from "react";
 import "../Blog.scss";
+import "../style/contact.scss";
+
 function Profile() {
   return (
     <>
       <header>
         {" "}
-        <h2>Anell's College Fund</h2>
-        <p>17 year old going to Harvard !</p>
+        <div className="wavebro"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#F67884"
+            fill-opacity="1"
+            d="M0,256L80,218.7C160,181,320,107,480,117.3C640,128,800,224,960,240C1120,256,1280,192,1360,160L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+          ></path>
+        </svg>{" "}
+        <div className="namebro">
+          <h2>Anell's College Fund</h2>
+        </div>
       </header>
-      <div className="row">
+
+      <div className="row vidbro">
         <div className="col-6">
           <div className="embed-responsive embed-responsive-16by9">
             <iframe
@@ -29,7 +41,7 @@ function Profile() {
             ></div>
           </div>
           <div>
-            <h2>$750</h2>
+            <h2>$17,950</h2>
             <p>pledged of $20,823 goal</p>
           </div>
           <div>
@@ -47,7 +59,10 @@ function Profile() {
             >
               Donate
             </button>
-            <button type="button" className="btn btn-outline-danger btn-lg right">
+            <button
+              type="button"
+              className="btn btn-outline-danger btn-lg right"
+            >
               Follow
             </button>
           </div>
@@ -97,23 +112,26 @@ function Profile() {
             </nav>
             <div className="tab-content" id="nav-tabContent">
               <div
-                className="tab-pane fade show active"
+                className="tab-pane fade show active container"
                 id="nav-home"
                 role="tabpanel"
                 aria-labelledby="nav-home-tab"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                dignissim, tortor at efficitur aliquam, felis dolor elementum
-                lacus, molestie ultricies neque est at purus. Nulla facilisi.
-                Nunc ultricies accumsan quam, ac suscipit justo. Etiam lobortis
-                suscipit viverra. Phasellus accumsan id lacus vel scelerisque.
-                Aliquam sed rutrum velit, id fringilla felis. Ut blandit iaculis
-                orci ac dignissim. Integer vitae ipsum tortor. Integer sagittis
-                non justo nec molestie. Vivamus malesuada, dolor non eleifend
-                venenatis, purus metus placerat ex, et molestie enim nibh vel
-                dui. className aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Nulla vitae neque lorem.
-                Phasellus malesuada justo eros, nec pretium massa dapibus at.
+                <h2 className="nameBro">About Me:</h2>
+                <p>
+                  After taking a year off from theatre to explore other
+                  passions, I have decided to pursue a Master of Fine Arts in
+                  Stage Management. Before my undergraduate, I had dreamed of
+                  obtaining an MFA from Columbia University in NYC. Today, I
+                  received an email from Michael J. Passaro, the head of stage
+                  management at Columbia. It stated I have been granted an
+                  in-person interview for the MFA Stage Management program at
+                  Columbia University! This is a wonderful opportunity that I am
+                  incredibly thankful for. I am pinching myself thinking I have
+                  a real shot at obtaining an MFA from Columbia. However, I need
+                  to ask for some help in getting to NYC February 11 for
+                  interviews. Thank you for your support!
+                </p>{" "}
               </div>
               <div
                 className="tab-pane fade"
@@ -126,9 +144,9 @@ function Profile() {
                     <div className="photo"></div>
                     <ul className="details">
                       <li className="author">
-                        <a href="#">John Doe</a>
+                        <a href="#">Anell Doe</a>
                       </li>
-                      <li className="date">Aug. 24, 2015</li>
+                      <li className="date">Sept. 24, 2019</li>
                       <li className="tags">
                         <ul>
                           <li>
@@ -149,7 +167,7 @@ function Profile() {
                   </div>
                   <div className="description">
                     <h1>Learning to Code</h1>
-                    <h2>Opening a door to the future</h2>
+                    <h2>Declaring my major</h2>
                     <p>
                       {" "}
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -167,19 +185,19 @@ function Profile() {
                     <div className="photo"></div>
                     <ul className="details">
                       <li className="author">
-                        <a href="#">Jane Doe</a>
+                        <a href="#">Anell Doe</a>
                       </li>
-                      <li className="date">July. 15, 2015</li>
+                      <li className="date">Au. 15, 2019</li>
                       <li className="tags">
                         <ul>
                           <li>
                             <a href="#">Learn</a>
                           </li>
                           <li>
-                            <a href="#">Code</a>
+                            <a href="#">College</a>
                           </li>
                           <li>
-                            <a href="#">JavaScript</a>
+                            <a href="#">Excited</a>
                           </li>
                         </ul>
                       </li>
@@ -206,35 +224,34 @@ function Profile() {
                 role="tabpanel"
                 aria-labelledby="nav-contact-tab"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                dignissim, tortor at efficitur aliquam, felis dolor elementum
-                lacus, molestie ultricies neque est at purus. Nulla facilisi.
-                Nunc ultricies accumsan quam, ac suscipit justo. Etiam lobortis
-                suscipit viverra. Phasellus accumsan id lacus vel scelerisque.
-                Aliquam sed rutrum velit, id fringilla felis. Ut blandit iaculis
-                orci ac dignissim. Integer vitae ipsum tortor. Integer sagittis
-                non justo nec molestie. Vivamus malesuada, dolor non eleifend
-                venenatis, purus metus placerat ex, et molestie enim nibh vel
-                dui. className aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Nulla vitae neque lorem.
-                Phasellus malesuada justo eros, nec pretium massa dapibus at.
+                <h1 className="nameBro">Contact</h1>
+                <form class="cf">
+                  <div class="half left cf">
+                    <input
+                      type="text"
+                      id="input-name"
+                      placeholder="Name"
+                    ></input>
+                    <input
+                      type="email"
+                      id="input-email"
+                      placeholder="Email address"
+                    ></input>
+                  </div>
+                  <div class="half right cf">
+                    <textarea
+                      name="message"
+                      type="text"
+                      id="input-message"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <input type="submit" value="Submit" id="input-submit"></input>
+                </form>{" "}
               </div>
             </div>
-            1 of 3 (Wider) <h2>Heading</h2>
-            <p>
-              Donec sed odio dui. Etiam porta sem malesuada magna mollis
-              euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
-              Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-              Praesent commodo cursus magna.
-            </p>
-            <p>
-              <a className="btn btn-secondary" href="#" role="button">
-                View details &raquo;
-              </a>
-            </p>
           </div>
           <div className="col-4">
-            2 of 3
             <div className="card">
               <img
                 src="https://media.wired.com/photos/5be4cd03db23f3775e466767/125:94/w_2375,h_1786,c_limit/books-521812297.jpg"
@@ -242,37 +259,35 @@ function Profile() {
                 alt="..."
               ></img>
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
+                <h5 className="card-title">Books</h5>
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Support my goals for post-secondary education by donating the
+                  cost of a textbook.
                 </p>
                 <a href="#" className="btn btn-primary">
-                  Go somewhere
+                  Donate
                 </a>
               </div>
             </div>
             <div className="card">
               <img
-                src="https://media.wired.com/photos/5be4cd03db23f3775e466767/125:94/w_2375,h_1786,c_limit/books-521812297.jpg"
+                src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Casio_calculator_JS-20WK_in_201901_002.jpg"
                 className="card-img-top"
                 alt="..."
               ></img>
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
+                <h5 className="card-title">Supplies</h5>
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Help me pay for other supplies, like calculators and pens.
                 </p>
                 <a href="#" className="btn btn-primary">
-                  Go somewhere
+                  Donate
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <hr className="featurette-divider"></hr>
     </>
   );
 }

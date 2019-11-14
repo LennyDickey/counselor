@@ -1,71 +1,45 @@
 ### Carolina Fintech Hub Hackathon
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Hackathon challenge was created to resolve economic mobility in Charlotte. The app has a home page with the about us. It also has a Survey Page were to allow the students to give their opinion and also allows the app to get more information about the student. Base on the student information the app will generate different types of non-profits that will help the student on the PathWay. Once the student is on the pathWay he/she will be able to choose from the nonprofits that The page will show them. Science this a demo is getting demi data but it is connected with a Mongo database.This app was made with node.js, express, and MongoDB Atlas and the app is deployed through Heroku.
+ 
+# Install
 
-## Available Scripts
+* Open terminal
+* git clone 
+* install the node packages using (npm install). 
+* Create Atlas account to storage date online.
+* Create Heroku account to starage web page.
+* Download Heroku to local mechine.
+* creating a heroku cli
+* Create an .env file with the PORT that the server will be running on.
+* Add LOCAL_URI on the .env to store data locally.
+* Add ATLAS_URI on the .env to store data on Atlas.
 
-In the project directory, you can run:
+# Running the app
 
-### `npm start`
+* Using the command line npm start
+* To stop running the server and the react app, you can hit control + c to close both.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# This app was Built using:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+* React - The framework used
+* NodeJS - The development for server
+* Express & Express Router - Used to create endpoints
+* MongoDB Atlas - Cloud database
+* Concurrently - Used to run servers at the same time
+* Heroku - App deployment
 
-### `npm test`
+# Link to Heroku
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*
 
-### `npm run build`
+# Authors
+* Christiam Hernandez
+* Wendy Deras
+* Lenny Dickey
+* Connor Nicholson
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# License
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+ Apache License 2.0 Copyright (c) 2019 

@@ -1,8 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
-=======
-// import "../style/wave.css"
->>>>>>> 0c71bc6c361416ef48a06e85cd1ecc1a3663bf76
 
 function Home() {
   return (

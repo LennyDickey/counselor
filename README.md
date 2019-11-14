@@ -42,4 +42,4 @@ This Hackathon challenge was created to resolve economic mobility in Charlotte. 
 
 # License
 
- Apache License 2.0 Copyright (c) 2019 
+ MIT Copyright (c) 2019 

@@ -36,9 +36,9 @@ This Hackathon challenge was created to resolve economic mobility in Charlotte. 
 
 # Authors
 * Christiam Hernandez
-* Wendy Deras
-* Lenny Dickey
 * Connor Nicholson
+* Lenny Dickey
+* Wendy Deras
 
 # License
 

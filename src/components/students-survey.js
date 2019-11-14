@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import * as Survey from "survey-react";
 import "survey-react/survey.css";
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
 import "jquery-ui/themes/base/all.css";
 import "nouislider/distribute/nouislider.css";
 import "select2/dist/css/select2.css";

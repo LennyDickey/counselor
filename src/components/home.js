@@ -97,7 +97,7 @@ function Home() {
               <div className="row no-gutters">
                 <div className="col-md-4">
                   <img
-                    src="https://media.istockphoto.com/photos/portrait-of-smiling-teen-boy-outdoors-picture-id589098830?k=6&m=589098830&s=612x612&w=0&h=Ut2FNWjS9CxXG5DdDduLqOEhcV0RBzRvsLrh9qS5EaY="
+                    src="https://youth.gov/sites/default/files/topic_mentoring.jpg"
                     type="pics/png"
                     alt="..."
                     className="card-img"
@@ -106,14 +106,14 @@ function Home() {
                 <div className="col-md-8">
                   <div className="card-body">
                     <h5 className="card-title ">Counslr Stories</h5>
-                    <h6>Meet Ava and Cory</h6>
+                    <h6>Meet Cory and Lynn</h6>
                     <p>
                       "My life completley turned around because of Corey. It
                       gave me a purpise to help my community and change someones
                       life forever."
                     </p>
                     <p>
-                      Ava sponsered Corey by donating $10K. Corey was able to
+                      Corey sponsered Lynn by donating $10K. Corey was able to
                       attend college.
                     </p>
                   </div>
@@ -124,7 +124,7 @@ function Home() {
               <div className="row no-gutters">
                 <div className="col-md-4">
                   <img
-                    src="https://media.istockphoto.com/photos/portrait-of-smiling-teen-boy-outdoors-picture-id589098830?k=6&m=589098830&s=612x612&w=0&h=Ut2FNWjS9CxXG5DdDduLqOEhcV0RBzRvsLrh9qS5EaY="
+                    src="https://www.cdc.gov/features/diabetes-women/diabetes-women_456px.jpg"
                     type="pics/png"
                     alt="..."
                     className="card-img"

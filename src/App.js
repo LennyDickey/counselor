@@ -16,14 +16,11 @@ function App() {
     <Router>
       <Navbar />
 
-      <div className="container">
-        <Route path="/Home" exact component={Home} />
-
-        <Route path="/" exact component={Profile} />
-        <Route path="/survey" render={() => <Survey />} />
-        <Route path="/pathWay" render={() => <PathWay />} />
-        <Route path="/students/" component={StudentInfo} />
-      </div>
+      <Route path="/" exact component={Home} />
+      <Route path="/profile" exact component={Profile} />
+      <Route path="/survey" render={() => <Survey />} />
+      <Route path="/pathWay" render={() => <PathWay />} />
+      <Route path="/students/" component={StudentInfo} />
 
       <Footer />
     </Router>

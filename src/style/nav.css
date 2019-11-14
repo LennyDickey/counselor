@@ -1,0 +1,21 @@
+.navbar {
+  background-color: rgba(154, 96, 230, 0.5);
+  border-bottom: 1px solid #8baffc;
+  font-family: "Roboto Mono", monospace;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: rgb(245, 134, 255);
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.logo{
+    width: 60px;
+}

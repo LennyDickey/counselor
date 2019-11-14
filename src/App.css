@@ -20,7 +20,7 @@
 
 
 /* wendy home */
-header {
+.hero {
   position: relative;
   background-color: transparent;
   height: calc(75vh + 100px);

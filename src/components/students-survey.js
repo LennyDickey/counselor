@@ -15,6 +15,8 @@ import { Link } from 'react-router-dom';
 import * as widgets from "surveyjs-widgets";
 import "../style/survey.scss";
 import { checkServerIdentity } from "tls";
+import PathWay from "./PathWayCard";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 Survey.StylesManager.applyTheme("default");
 
@@ -42,10 +44,10 @@ class StudentsSurvey extends Component {
           {
             "type": "radiogroup",
             "name": "position",
-            "title": "Choose job position...",
+            "title": "Choose your grade?...",
             "isRequired": true,
             "colCount": 0,
-            "choices": ["1|Designer", "2|Front-end Developer", "3|Back-end Developer", "4|Database Administrator", "5|System Engineer"]
+            "choices": ["1|9th grade", "2|10th grade", "3|11th grade", "4|12 grade", "5|High School Graduated"]
           },
           {
             type: "dropdown",
@@ -55,13 +57,13 @@ class StudentsSurvey extends Component {
               url: "https://restcountries.eu/rest/v1/all"
             },
             name: "countries",
-            title: "Please select the country you have arrived from:"
+            title: "Please select the country you are from:"
           },
           {
             type: "rating",
             name: "satisfaction",
             isRequired: true,
-            title: "How satisfied are you with the Product?",
+            title: "How is your experience with school system?",
             mininumRateDescription: "Not Satisfied",
             maximumRateDescription: "Completely satisfied"
           },
@@ -69,7 +71,7 @@ class StudentsSurvey extends Component {
             name: "date",
             type: "datepicker",
             inputType: "date",
-            title: "Your favorite date:",
+            title: "Date when school started:",
             dateFormat: "mm/dd/yy",
             isRequired: true
           }  
@@ -109,23 +111,23 @@ class StudentsSurvey extends Component {
             rows: [
               {
                 isRequired: true,
-                value: "affordable",
-                text: "Product is affordable"
+                value: "easy",
+                text: "Easy to talk to a teacher"
               },
               {
                 isRequired: true,
-                value: "does what it claims",
-                text: "Product does what it claims"
+                value: "Good communication",
+                text: "Good communication with school board"
               },
               {
                 isRequired: true,
-                value: "better then others",
-                text: "Product is better than other products on the market"
+                value: "Access to advisor",
+                text: "Have access to school advisor"
               },
               {
                 isRequired: true,
-                value: "easy to use",
-                text: "Product is easy to use"
+                value: "goals after graduation",
+                text: "School talk about goals after graduation"
               }
             ]
           },
@@ -133,9 +135,8 @@ class StudentsSurvey extends Component {
             type: "rating",
             name: "recommend friends",
             isRequired: true,
-            visibleIf: "{satisfaction} > 3",
             title:
-              "How likely are you to recommend the Product to a friend or co-worker?",
+              "How likely are you to recommend another student or friend to come to your school?",
             mininumRateDescription: "Will not recommend",
             maximumRateDescription: "I will recommend"
           },
@@ -143,7 +144,7 @@ class StudentsSurvey extends Component {
             type: "comment",
             isRequired: true,
             name: "suggestions",
-            title: "What would make you more satisfied with the Product?"
+            title: "What would you need to be successful?"
           }
         ]
       },
@@ -154,36 +155,25 @@ class StudentsSurvey extends Component {
             type: "radiogroup",
             isRequired: true,
             name: "price to competitors",
-            title: "Compared to our competitors, do you feel the Product is",
+            title: "What program would you be more interested",
             choices: [
-              "Less expensive",
-              "Priced about the same",
-              "More expensive",
+              "Mentorship",
+              "Coding",
+              "Scholarship",
               "Not sure"
             ]
           },
           {
             type: "radiogroup",
-            name: "price",
+            name: "After Graduation",
             isRequired: true,
-            title: "Do you feel our current price is merited by our product?",
+            title: "What are you planning on doing after High School",
             choices: [
-              "correct|Yes, the price is about right",
-              "low|No, the price is too low for your product",
-              "high|No, the price is too high for your product"
+              "Go to college",
+              "Find a good job",
+              "Not sure"
             ]
           },
-          {
-            type: "signaturepad",
-            "isRequired": true,
-            name: "sign",
-            title: "Please enter your signature"
-          }
-        ]
-      },
-      // page 4
-      {
-        questions: [
           {
             type: "text",
             isRequired: true,
@@ -192,8 +182,9 @@ class StudentsSurvey extends Component {
               'Thank you for taking our survey. Please enter your email address, then press the "Submit" button.'
           }
         ]
-      }
-    ]
+      },
+    ],
+    completedHtml: `<div><h1>Thank you for completing the survey!</h1><br> <a href="/pathWay">Click for Resuls</a></div>`
   };
 
   onValueChanged(result) {
@@ -203,24 +194,20 @@ class StudentsSurvey extends Component {
   onComplete(result) {
     console.log("Complete! ");
   }
-
+  
   render() {
     var model = new Survey.Model(this.json);
     return (
       <div className="App">
         <div className="App-header">
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <h2>Welcome to Counselor Survey</h2>
         </div>
         <div className="surveyjs">
-          {/* <h1>Survey is in action:</h1> */}
           <Survey.Survey
             model={model}
-            onComplete={() => console.log('Hello')}
+            onComplete={() => console.log("Hello")}
             onValueChanged={this.onValueChanged}
           />
-          <Link to="/pathWay" className="btn btn-primary">Click for Resuls</Link>
-         
         </div>
       </div>
     );
